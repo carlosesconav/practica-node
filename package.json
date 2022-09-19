@@ -1,0 +1,25 @@
+{
+  "name": "practica-node",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosesconav/practica-node.git"
+  },
+  "author": "Carlos Escobar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carlosesconav/practica-node/issues"
+  },
+  "homepage": "https://github.com/carlosesconav/practica-node#readme",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

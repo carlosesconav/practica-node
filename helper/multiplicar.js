@@ -1,6 +1,5 @@
 const fs = require('fs');
 
-
 const crearArchivo = async (base = 5) => {
 
     try {
@@ -29,9 +28,7 @@ const crearArchivo = async (base = 5) => {
 
     }
 
-
 }
-
 
 module.exports = {
 
