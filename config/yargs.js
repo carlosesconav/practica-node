@@ -1,37 +1,36 @@
 
 const argv = require('yargs')
-.options('b', {
-    alias:'base',
-    type:'number',
-    demandOption:true
-})
-.check((argv,options)=>{
+    .options('b', {
+        alias: 'base',
+        type: 'number',
+        demandOption: true
+    })
+    .check((argv, options) => {
 
-    if(isNaN(argv.b)){
+        if (isNaN(argv.b)) {
 
-        throw 'La base tiene que ser un numero'
+            throw 'La base tiene que ser un numero'
 
-    }
+        }
 
-    return true;
-})
-.options('l',{
+        return true;
+    })
+    .options('l', {
 
-    alias:"listar",
-    type:"number",
-    demandOption: true,
-    default:false
-}).check((argv,options)=>{
+        alias: "listar",
+        type: "number",
+        demandOption: true,
+        default: false
+    }).check((argv, options) => {
 
-    if (isNaN(argv.b)) {
-        
-        throw 'La base tiene que ser un numero'
+        if (isNaN(argv.b)) {
 
-    }
+            throw 'La base tiene que ser un numero'
 
-    return true;
+        }
 
-}).argv;
+        return true;
 
+    }).argv;
 
-module.exports = {argv:argv}
+module.exports = { argv: argv }
