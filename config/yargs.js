@@ -1,4 +1,4 @@
-
+const colors = require('colors')
 const argv = require('yargs')
     .options('b', {
         alias: 'base',
@@ -26,7 +26,23 @@ const argv = require('yargs')
 
         if (isNaN(argv.b)) {
 
-            throw 'La base tiene que ser un numero'
+            throw 'La lista debe ser un boolean'
+
+        }
+
+        return true;
+
+    }).options('h', {
+
+        alias: "hasta",
+        type: 'numbre'.bgRed,
+        default: false,
+        describe:"Dimension de la tabla de multiplicar".bgYellow
+    }).check((argv, options) => {
+
+        if (isNaN(argv.h)) {
+
+            throw 'La dimension tiene que ser un numero'
 
         }
 
